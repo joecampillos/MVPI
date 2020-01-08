@@ -11,7 +11,7 @@
 
 <body class="container">
 
-    <div class="header-container full-column">
+    <div class="header-container full-column grid-full">
 
         <header class="header">
             <nav class="nav">
@@ -47,6 +47,50 @@
         <div class="header-text">
             <p class="header-text__sub">Elegant Properties. Unrivalled Service. Memorable Moments.</p>
             <h1 class="header-text__title">Turning Vision into Reality</h1>
+
+
+            <form action="" class="searchForm">
+                <div class="custom-select-wrapper searchForm__property">
+                    <div class="custom-select">
+                        <div class="custom-select__label">Property Type</div>
+                        <div class="custom-select__trigger"><span>All Property</span>
+                            <div class="custom-select__arrow"></div>
+                        </div>
+                        <div class="custom-options">
+                            <span class="custom-option selected" data-value="all-location">All Property</span>
+                            <span class="custom-option" data-value="leisure">Leisure</span>
+                            <span class="custom-option" data-value="residential">Residential</span>
+                            <span class="custom-option" data-value="commercial">Commercial</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-select-wrapper searchForm__location">
+                    <div class="custom-select">
+                        <div class="custom-select__label">Location</div>
+                        <div class="custom-select__trigger"><span>All Location</span>
+                            <div class="custom-select__arrow"></div>
+                        </div>
+                        <div class="custom-options">
+                            <span class="custom-option selected" data-value="all-location">All Location</span>
+                            <span class="custom-option" data-value="leisure">Calatagan, Batangas</span>
+                            <span class="custom-option" data-value="residential">San Juan, Batangas</span>
+                            <span class="custom-option" data-value="commercial">Samal, Davao</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-select-wrapper searchForm__button">
+                    <button class="searchForm__submit btn primary-bg btn-hover">
+                    
+                    
+                    <svg class="btn__icon btn__icon--left" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.4688 14.5688L11.7875 10.8875C12.7 9.775 13.25 8.35 13.25 6.79688C13.25 3.23438 10.3594 0.34375 6.79688 0.34375C3.23125 0.34375 0.34375 3.23438 0.34375 6.79688C0.34375 10.3594 3.23125 13.25 6.79688 13.25C8.35 13.25 9.77187 12.7031 10.8844 11.7906L14.5656 15.4688C14.8156 15.7188 15.2188 15.7188 15.4688 15.4688C15.7188 15.2219 15.7188 14.8156 15.4688 14.5688ZM6.79688 11.9656C3.94375 11.9656 1.625 9.64688 1.625 6.79688C1.625 3.94688 3.94375 1.625 6.79688 1.625C9.64688 1.625 11.9688 3.94688 11.9688 6.79688C11.9688 9.64688 9.64688 11.9656 6.79688 11.9656Z" fill="#ffffff"/>
+                    </svg>
+    
+    
+                        
+                    Search</button>
+                </div>
+            </form>
           
           <!--  <form action="" class="searchForm">
 
@@ -89,7 +133,97 @@
         <h2 class="heading-tag__title">Explore MVPI Properties</h2>
         <p class="heading-tag__subtitle">We offer all types of property, from retail and industrial to hotels and accommodation, We’re always working to help </p>
 
-        <div class="home-services">
+
+        <!-- SERVICE 01: LEISURE TOURISM -->
+        <div class="home-services service-01">
+            <div class="home-services__number">01</div>
+            <div class="home-services__heading heading-tag-small">
+                <h3 class="heading-tag-small__title color-primary">Leisure Tourism Estate</h3>
+                <p class="heading-tag-small__subtitle">Whether buying, selling or renting a pub, bar, cinema, restaurant, gold course, or any other type of leisure property, we can help.
+                </p>
+
+            </div>
+            <div class="home-services__slidenav">
+
+            <a href="#" class="arrow arrow-left"> 
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="29" stroke="#3534B1" stroke-width="2"/>
+                <path d="M25.828 28.9997L31.192 23.6357L29.778 22.2217L22 29.9997L29.778 37.7777L31.192 36.3637L25.828 30.9997H38V28.9997H25.828Z" fill="#3534B1"/>
+                </svg>
+            </a>  
+
+            <a href="#" class="arrow arrow-right"> 
+                
+               <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="29" stroke="#3534B1" stroke-width="2"/>
+                <path d="M34.172 27.9997L28.808 22.6357L30.222 21.2217L38 28.9997L30.222 36.7777L28.808 35.3637L34.172 29.9997H22V27.9997H34.172Z" fill="#3534B1"/>
+                </svg>
+    
+            </a>  
+
+            </div>
+
+
+
+            <div class="home-services__content">
+                <ul class="service-list">
+                    <h4 class="service-list__title">Scenic</h4>
+                    <li class="service-list__bullets"><a href="#" class="service-list__link">CaSoBe</a></li>
+                    <li class="service-list__bullets"><a href="#" class="service-list__link">Club Laiya</a></li>
+                    <li class="service-list__bullets"><a href="#" class="service-list__link">Costa Azalea</a></li>
+                </ul>
+                
+            </div>
+
+        </div>
+
+
+        <!-- SERVICE 02 : RESIDENTIAL -->
+
+        <div class="home-services service-02">
+            <div class="home-services__number">02</div>
+            <div class="home-services__heading heading-tag-small">
+                <h3 class="heading-tag-small__title color-primary">Residential and Commercial</h3>
+                <p class="heading-tag-small__subtitle">Whether buying, selling or renting a pub, bar, cinema, restaurant, gold course, or any other type of leisure property, we can help.
+                </p>
+
+            </div>
+            <div class="home-services__slidenav">
+
+            <a href="#" class="arrow arrow-left"> 
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="29" stroke="#3534B1" stroke-width="2"/>
+                <path d="M25.828 28.9997L31.192 23.6357L29.778 22.2217L22 29.9997L29.778 37.7777L31.192 36.3637L25.828 30.9997H38V28.9997H25.828Z" fill="#3534B1"/>
+                </svg>
+            </a>  
+
+            <a href="#" class="arrow arrow-right"> 
+                
+               <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="29" stroke="#3534B1" stroke-width="2"/>
+                <path d="M34.172 27.9997L28.808 22.6357L30.222 21.2217L38 28.9997L30.222 36.7777L28.808 35.3637L34.172 29.9997H22V27.9997H34.172Z" fill="#3534B1"/>
+                </svg>
+    
+            </a>  
+
+            </div>
+
+
+
+            <div class="home-services__content ">
+                <ul class="service-list">
+                    <li class="service-list__bullets"><a href="#" class="service-list__link">Residential</a></li>
+                    <li class="service-list__bullets"><a href="#" class="service-list__link">Commercial</a></li>
+                </ul>
+                
+            </div>
+
+        </div>
+
+
+        <!-- SERVICE 03: EXPERIENCE HIGHLIGHT -->
+
+        <div class="home-services service-03 active">
             <div class="home-services__number">03</div>
             <div class="home-services__heading heading-tag-small">
                 <h3 class="heading-tag-small__title color-primary">Experience Highlight</h3>
@@ -135,8 +269,88 @@
 
     </section>
 
+    
 
-    <section class="locations heading-tag">
+    <section class="rotator-slide">
+
+        <!-- background circle -->
+        <div class="rotator-slide__bg-circle"></div>
+
+
+
+        <!-- LEISURE SLIDE -->
+
+        <div class="rotator-slide__item">
+
+
+            <div class="icon-container leisure">
+
+                <div class="rotator-slide__iconsmall">
+                    
+                    <img src="img/rotator/leisure-icon-small.svg" alt="">
+        
+                </div>
+
+             </div>
+
+
+            <div class="rotator-slide__icon">
+                 <img src="img/rotator/millennial-icon.svg" alt="Millennial Resort Icon"> 
+            </div>
+
+            <div class="rotator-slide__figure">
+                  <img src="img/rotator/leisure-circle.png" alt="Millennial Resort" class="rotator-slide__img"> 
+            </div>
+        </div>
+
+
+        <!-- RESIDENTIAL SLIDE -->
+
+        <div class="rotator-slide__item ">
+
+
+            <div class="icon-container residential">
+
+                <div class="rotator-slide__iconsmall ">
+                    
+                    <img src="img/rotator/real-estate-icon-small.svg" alt="">
+        
+                </div>
+
+             </div>
+
+            <div class="rotator-slide__icon">
+                 <img src="img/rotator/millennial-icon.svg" alt="Millennial Resort Icon"> 
+            </div>
+
+            <div class="rotator-slide__figure">
+                  <img src="img/rotator/residential-circle.png" alt="Millennial Resort" class="rotator-slide__img"> 
+            </div>
+        </div>
+
+
+        <!-- MILLENIAL RESORT SLIDE -->
+
+
+        <div class="rotator-slide__item active">
+
+            <div class="rotator-slide__icon active-slide">
+                 <img src="img/rotator/millennial-icon.svg" alt="Millennial Resort Icon"> 
+            </div>
+
+            <div class="rotator-slide__figure active-slide">
+                  <img src="img/rotator/millennial-resort-circle.png" alt="Millennial Resort" class="rotator-slide__img "> 
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- LOCATION SECTION -->
+
+
+    <section class="locations heading-tag grid-container">
 
         <h2 class="heading-tag__title">Lands of Discovery</h2>
         <p class="heading-tag__subtitle">The end to all exploring will be to arrive where we started and know the place for the first time</p>
@@ -174,6 +388,18 @@
             <figure class="map__image">
                 <img src="img/globe.jpg" alt="Philippine Map">
             </figure>
+
+            <div class="map__pin" style="top: 15%; left: 45%;" data-location="san-juan-batangas" data-view="na">
+                <img src="img/icons/logo-symbol_active.png" alt="Location Pin">
+            </div>
+
+            <div class="map__pin" style="top: 13%; left: 50%;" data-location="san-juan-batangas" data-view="na">
+                <img src="img/icons/logo-symbol.png" alt="Location Pin">
+            </div>
+
+            <div class="map__pin" style="top: 37%; left: 83%;" data-location="san-juan-batangas" data-view="na">
+                <img src="img/icons/logo-symbol.png" alt="Location Pin">
+            </div>
 
         </div>
 
@@ -254,7 +480,10 @@
 
     </section>
 
-    <section class="about">
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about grid-container">
         <div class="about__content box-content">
             <div class="box-content__heading">
                 <img src="img/logo_mvpi_symbol.png" alt="MVPI Logo Symbol" class="box-content__icon">
@@ -425,6 +654,115 @@
     </section>
 
 
+
+    
+    <!-- CTA -->
+
+
+    <section class="cta-cont grid-full">
+
+        <div class="bg-overlay"></div>
+
+        <div class="cta-bot">
+
+            <h2 class="cta-bot__text">Committed to getting the colorful places to live and play.</h2>
+            <a href="#" class="cta-bot__button btn large-btn primary-bg btn-hover">Browse properties</a>
+
+        </div>
+
+
+    </section>
+
+
+    <footer class="footer-cont grid-full full-column">
+
+        <div class="footer grid-container">
+
+                <div class="footer__logo-col">
+
+                    <img src="img/logo_mvpi-white.png" alt="MVPI Logo White" class="footer__logo">
+                    <a href="#" class="btn btn-outline"> <img src="img/icons/investors-icon.svg" alt="Investors Icon" class="btn__icon--left"> Investors</a>
+
+                </div>
+
+                <ul class="footer__contact-col infocolumn">
+
+                    <li class="footer__find-us infocolumn__item">
+                        <span class="infocolumn__label">Find Us</span>
+                        <span class="infocolumn__info">25th Floor Tower 1, Insular Life Centre, Insular Drive, Filinvest Corporate City, Alabang, Muntinlupa City
+                        </span>
+                    </li>
+
+                    <li class="footer__call infocolumn__item">
+                        <span class="infocolumn__label">Call</span>
+                        <span class="infocolumn__info">
+                            (+63 2) 8836.5000 <br/>
+                            (+63 918) 836.5000
+                           
+                        </span>
+                    </li>
+
+                    <li class="footer__email infocolumn__item">
+                        <span class="infocolumn__label">Email</span>
+                        <span class="infocolumn__info">info@mvpi.com
+                        </span>
+                    </li>
+
+                    <li class="footer__connect infocolumn__item">
+                        <span class="infocolumn__label">Connect</span>
+                        <ul class="infocolumn__info social-icons">
+                            <li class="social-icons__item"><a href="#" class="social-icons__link"><img src="img/icons/social--fb.svg" alt="Facebook" class="social-icons__img"></a></li>
+
+                            <li class="social-icons__item"><a href="#" class="social-icons__link"><img src="img/icons/social--li.svg" alt="LinkedIn" class="social-icons__img"></a></li>
+
+                            <li class="social-icons__item"><a href="#" class="social-icons__link"><img src="img/icons/social--tw.svg" alt="Twitter" class="social-icons__img"></a></li>
+
+                            <li class="social-icons__item"><a href="#" class="social-icons__link"><img src="img/icons/social--yt.svg" alt="Youtube" class="social-icons__img"></a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <div class="footer__links-col">
+
+                    <ul class="footer-mainlinks">
+                        <li class="footer-mainlinks__item"><a href="#" class="footer-mainlinks__link">Home</a></li>
+                        <li class="footer-mainlinks__item"><a href="#" class="footer-mainlinks__link">About us</a></li>
+                        <li class="footer-mainlinks__item"><a href="#" class="footer-mainlinks__link">Project</a></li>
+                        <li class="footer-mainlinks__item"><a href="#" class="footer-mainlinks__link">Location</a></li>
+                        <li class="footer-mainlinks__item"><a href="#" class="footer-mainlinks__link">Contact</a></li>
+                        <li class="footer-mainlinks__item"><a href="#" class="footer-mainlinks__link">Faqs</a></li>
+                        <li class="footer-mainlinks__item"><a href="#" class="footer-mainlinks__link">Careers</a></li>
+                    </ul>
+
+                    <ul class="footer-servicelinks">
+                        <li class="footer-servicelinks__item"><a href="#" class="footer-servicelinks__link">Resorts</a></li>
+                        <li class="footer-servicelinks__item"><a href="#" class="footer-servicelinks__link">Leisure</a></li>
+                        <li class="footer-servicelinks__item"><a href="#" class="footer-servicelinks__link">Real Estate</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer__copyright copyright">
+
+                    <div class="copyright__content">
+                        <span class="copyright__text">&copy; Copyright 2020 Metro Vantage Properties</span>
+                        <a href="#" class="copyright__link">Sitemap</a>
+                        <a href="#" class="copyright__link">Privacy Policy</a>
+                        <a href="#" class="copyright__link">Terms of use</a>
+                    </div>
+
+                    <a href="#" class="copyright__siteby">Site by Synthesis Group</a>
+
+                </div>
+
+
+        </div>
+
+    </footer>
+
+
+<script src="js/scripts.js"></script>
 
 </body>
 </html>
