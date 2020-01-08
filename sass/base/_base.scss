@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+
+    margin:0;
+    padding:0;
+    box-sizing:inherit;
+}
+
+html {
+    box-sizing:border-box;
+    font-size:62.5%; //1rem = 10px
+}
+
+body {
+    font-family: $font-primary;
+    line-height:1.6;
+    color:$color-text-dark;
+    font-size:1.6rem;
+}
+
+
+a:link,
+a:visited {text-decoration:none;
+transition: all .2s ease-in-out;
+}
+
+.color-primary {color: $color-primary;}
+
+/* View all button */
+.viewall {
+    
+    transition: all 0.2s ease-in-out;
+
+    &__icon {
+       margin-left:0.5rem;
+       top: 2px;
+       position: relative;
+    }
+
+    &::after {
+        content:'';
+        background: currentColor;
+        height:1px;
+        width:0;
+        position:absolute;
+        bottom:0;
+        left:0;
+        transition: width 0.2s ease-in-out;
+    }
+
+    &:hover::after, &:active::after {
+        width:100%;
+    }
+}
+.viewall:link,
+.viewall:visited {
+    font-family: $font-display;
+    font-size:1.2rem;
+    text-transform: uppercase;
+    letter-spacing:3px;
+    position: relative;
+    padding-bottom:0.5rem;
+}
+/*
+.viewall:hover,
+.viewall:active {
+    border-bottom:1px solid;
+}
+*/
+
+/* Slide arrows */
+
+.slide-arrows {
+    display:flex;
+
+    &__item {
+        padding:1rem;
+        margin-right:1rem;
+
+        &--left {
+
+        }
+
+        &--right {
+        }
+    }
+}

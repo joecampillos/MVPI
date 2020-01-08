@@ -1,0 +1,34 @@
+.cta-cont {
+    background:url('../img/homecta_bg.jpg') no-repeat center center;
+    margin-top:10rem;
+    position:relative;
+
+    @include full-grid;
+
+    .bg-overlay {      
+        opacity:0.3;
+    }
+}
+
+.cta-bot {
+
+    grid-column: center-start / center-end;
+    padding:10rem 0;
+    display:flex;
+    align-items: center;
+    z-index:2;
+
+    &__text {
+        font-family: 'Karla', sans-serif;
+        font-weight:700;
+        font-size:4.5rem;
+        line-height:1;
+        color:$color-white;
+        width:70%;
+        letter-spacing: -1px;
+    }
+
+    &__button {
+        margin-left:auto;
+    }
+}

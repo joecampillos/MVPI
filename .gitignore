@@ -1,10 +1,2 @@
 node_modules
-package-lock.json
-package.json
 gulp-try/
-sass/
-*.scss
-*.scss
-*.scss
-*.scss
-*.scss

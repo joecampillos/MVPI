@@ -1,0 +1,19 @@
+/** SOCIAL MEDIA ICONS **/
+
+.social-icons {
+
+    list-style:none;
+    display:flex;
+
+    &__item:not(:last-child) {
+        margin-right:2rem;
+    }
+
+    &__link {
+
+    }
+
+    &__img {
+
+    }
+}

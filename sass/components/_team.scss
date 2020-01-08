@@ -1,0 +1,21 @@
+.team-member {
+
+    text-align:center;
+
+    &__img {
+        border-radius:50%;
+        margin-bottom:1rem;
+
+    }
+
+    &__name {
+        text-transform:uppercase;
+        font-weight:700;
+        line-height: 1;
+    }
+
+    &__role {
+        font-size:1.4rem;
+        color:$color-primary-light;
+    }
+}

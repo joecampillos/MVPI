@@ -1,0 +1,144 @@
+/* HEADER MENU & BACKGROUND */
+
+.header-container {
+    background:url('../img/hero_bg.jpg') no-repeat;
+    background-size:cover;
+    background-position:center 0;
+    height:100vh;
+    position: relative;
+
+}
+
+.header {
+    grid-column:full-start / full-end;
+    padding: 2rem 5%;
+    z-index: 2;
+}
+
+.nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__menu, &__menu-secondary {
+        display:flex;
+        list-style:none;
+        font-size:$default-font;
+    }
+
+    &__menu {
+        font-family: $font-display;
+
+        &__link:link,
+        &__link:visited {
+            padding: 0 calc(3.6rem / 2);
+            color:$color-black;
+        }
+
+        &__link:hover,
+        &__link:active {
+            color:$color-primary;
+        }
+       
+    }
+
+    &__menu-secondary {
+        display:flex;
+
+        &__link:link,
+        &__link:visited {
+            padding: 0 calc(2rem / 2);
+            color:$color-tertiary;
+        }
+    }
+}
+
+
+.searchBtn {margin-left:2rem;}
+
+/* HEADER TEXT */
+.header-text {
+
+    grid-column:center-start / center-end;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    z-index:2;
+
+   /* 
+   &__sub, &__title {
+        text-shadow:0px 0px 30px rgba(0,56,68,1);
+    }
+    */
+
+    &__sub {
+        font-size: $reg-subtitle;
+        color:$color-white;
+    }
+
+    &__title {
+        color:$color-white;
+        font-size:5.6rem;
+        line-height: 1;
+        margin: 0.8rem 0;
+
+        }
+
+}
+
+
+/** FORM **/
+.searchForm {
+    margin-top:5rem;
+    display:flex;
+    z-index: 2;
+
+    &__group {
+
+    }
+
+    &__property {
+
+    }
+
+    &__location {
+
+    }
+
+    &__submit {
+
+    }
+}
+
+.header-shadow {
+    position: absolute;
+    z-index:1;
+    background:url(../img/shadow.png) no-repeat;
+    width:100%;
+    height:100%;
+    background-blend-mode: multiply;
+}
+
+.scroll-text {
+
+    grid-column: center-start / center-end;
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    bottom:5%;
+    z-index: 1;
+
+
+    &__title {
+        font-size:$reg-subtitle;
+        font-weight:700;
+        color:$color-white;
+        text-shadow:0px 0px 30px rgba(0,0,0,1);
+    }
+
+    &__scrolldown {
+        font-size:1.6rem;
+        color:$color-white;
+        text-shadow:0px 0px 30px rgba(0,0,0,1);
+    }
+}
