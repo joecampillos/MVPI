@@ -4,6 +4,14 @@
     grid-gap: 3rem;
     align-items: start;
 
+    @media only screen and (max-width: $bp-desktop-md) {
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    }
+
+    @media only screen and (max-width: $bp-tab-pt) {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+
     &__item {
 
         transition:all 0.2s ease-in;

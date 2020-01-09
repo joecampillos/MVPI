@@ -18,6 +18,11 @@
     align-items: center;
     z-index:2;
 
+    @media only screen and (max-width: $bp-tab-pt) {
+        flex-direction:column;
+        justify-content: center;
+    }
+
     &__text {
         font-family: 'Karla', sans-serif;
         font-weight:700;
@@ -26,9 +31,34 @@
         color:$color-white;
         width:70%;
         letter-spacing: -1px;
+
+        @media only screen and (max-width: $bp-desktop-md) {
+            width:62%;
+            font-size:4rem;
+        }
+
+        @media only screen and (max-width: $bp-tab-pt) {
+            font-size:4.5rem;
+            width:100%;
+            text-align:center;
+        }
+
+        @media only screen and (max-width: $bp-mobile-lg) {
+            font-size:3.5rem;
+        }
+
+        @media only screen and (max-width: $bp-mobile-md) {
+            font-size:3rem;
+            line-height: 1.2;
+        }
     }
 
     &__button {
         margin-left:auto;
+
+        @media only screen and (max-width: $bp-tab-pt) {
+            margin-left:0;
+            margin-top:3rem;
+        }
     }
 }

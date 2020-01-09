@@ -5,7 +5,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 { font-size:5.6rem;}
 
-h2 {font-size:3rem;}
+h2 {font-size:3rem;
+
+  @media only screen and (max-width: $bp-tab-sm) {
+    font-size:2.5rem;
+  }
+}
 
 h3 {font-size:2.2rem;}
 
@@ -23,6 +28,10 @@ h3 {font-size:2.2rem;}
   &__subtitle {
     font-size: $reg-subtitle;
     color:$color-mid-grey;
+
+    @media only screen and (max-width: $bp-mobile-lg) {
+      font-size:1.5rem;
+   }
   }
 }
 

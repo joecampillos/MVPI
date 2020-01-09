@@ -10,6 +10,10 @@
     grid-row-gap: 5rem;
     color:$color-white;
 
+    @media only screen and (max-width: $bp-tab-pt) {
+        grid-template-rows: max-content max-content min-content;
+    }
+
     a {color: $color-white;}
 
     /** LOGO COLUMN **/
@@ -19,10 +23,29 @@
         display:flex;
         flex-direction:column;
         align-items: start;
+
+        @media only screen and (max-width: $bp-tab-lg) {
+            grid-column:col-start 1 / col-start 2;
+        }
+
+        @media only screen and (max-width: $bp-tab-pt) {
+            grid-column: center-start / center-end;
+            align-items: center;
+        }
+
+        
     }
 
     &__logo {
         margin-bottom: 4rem;
+
+        @media only screen and (max-width: $bp-tab-lg) {
+            width:30rem;
+        }
+
+        @media only screen and (max-width: $bp-mobile-md) {
+            width:25rem;
+        }
     }
 
     &__investor-btn {
@@ -41,6 +64,22 @@
 
     &__contact-col {
         grid-column:col-start 4 / col-end 10;
+
+        @media only screen and (max-width: $bp-desktop-md) {
+            grid-column:col-start 4 / col-end 9;
+        }
+
+        @media only screen and (max-width: $bp-tab-lg) {
+            grid-column:col-start 2 / col-end 8;
+        }
+
+        @media only screen and (max-width: $bp-tab-pt) {
+            grid-column:col-start 1 / col-end 8;
+        }
+
+        @media only screen and (max-width: $bp-mobile-lg) {
+            grid-column: center-start / center-end;
+        }
     }
 
     .infocolumn {
@@ -54,6 +93,10 @@
             flex-direction:column;
             margin-bottom: 3rem;
             margin-left: 3rem;
+
+            @media only screen and (max-width: $bp-tab-pt) {
+                margin-left:0;
+            }
         }
 
         &__label {
@@ -75,6 +118,18 @@
         grid-column: col-start 11 / -1;
         display:grid;
         grid-template-columns: 1fr 1fr;
+
+        @media only screen and (max-width: $bp-desktop-md) {
+            grid-column:col-start 10 / -1;
+        }
+
+        @media only screen and (max-width: $bp-tab-lg) {
+            grid-column:col-start 9 / -1;
+        }
+
+        @media only screen and (max-width: $bp-mobile-lg) {
+            grid-column: center-start / center-end;
+        }
 
     }
 
@@ -99,6 +154,10 @@
 
         justify-self: end;
 
+        @media only screen and (max-width: $bp-mobile-lg) {
+            justify-self: start;
+        }
+
         &__link {
             color:$color-primary-light;
         }
@@ -110,6 +169,15 @@
         border-top:1px solid #5959BB;
         padding:3rem 0 0;
         font-size: 1.2rem;
+
+        @media only screen and (max-width: $bp-tab-pt) {
+            grid-row: 3 / -1;
+        }
+
+        @media only screen and (max-width: $bp-mobile-lg) {
+            grid-row: 4 / -1;
+            grid-column: center-start / center-end;
+        }
     }
 }
 
@@ -120,20 +188,50 @@
     display:flex;
     justify-content: space-between;
 
+    @media only screen and (max-width: $bp-tab-pt) {
+        flex-direction:column;
+    }
+
     &__content {
         display:flex;
+
+        @media only screen and (max-width: $bp-tab-pt) {
+            display: block;
+        }
+
     }
 
     &__text {
         margin-right:2rem;
+
+        @media only screen and (max-width: $bp-tab-pt) {
+            display: block;
+            margin-bottom:1rem;
+        }
     }
 
     &__link {
         border-left:1px solid $color-primary-light;
         padding:0 2rem;
+
+        @media only screen and (max-width: $bp-tab-pt) {
+           margin-bottom:2rem;
+           border-left:0;
+           border-right:1px solid $color-primary-light;
+        }
+
+        &.first-child {
+            @media only screen and (max-width: $bp-tab-pt) {
+                padding-left:0 !important;
+             }
+        }
     }
+   
 
     &__siteby {
-
+        @media only screen and (max-width: $bp-tab-pt) {
+            margin-top:2rem;
+            display:block;
+         }
     }
 }

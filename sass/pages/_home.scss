@@ -476,6 +476,16 @@
 
     .heading-tag__subtitle {
         width:45%;
+
+        @media only screen and (max-width: $bp-tab-sm) {
+            width: 65%;
+        }
+
+        @media only screen and (max-width: $bp-mobile-lg) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+       
     }
 
     .viewall {
@@ -484,6 +494,11 @@
         top: 5rem;
         color:
         #3534B1;
+
+        @media only screen and (max-width: $bp-mobile-lg) {
+            position:relative;
+            top:0;
+        }
     }
 }
 
