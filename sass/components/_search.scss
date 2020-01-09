@@ -1,26 +1,52 @@
 .searchForm {
     display:flex;
 
+    @media only screen and (max-width: $bp-mobile-lg) {
+      flex-direction:column;
+  }
+
     &__property {
         width:16.6rem;
         border-radius: $default-border 0 0 $default-border;
         border-right: 1px solid $color-grey;
+
+        @media only screen and (max-width: $bp-mobile-lg) {
+          border-radius: $default-border $default-border 0 0;
+          border-bottom: 1px solid $color-grey;
+
+       }
     }
 
     &__location {
         width:21.5rem;
+
+        @media only screen and (max-width: $bp-mobile-lg) {
+          border-radius: 0 0 $default-border $default-border ;
+       }
     }
 
     &__button {
         padding: 6px 8px 6px 8px;
         border-radius: 0 $default-border $default-border 0;
         display:flex;
+
+        @media only screen and (max-width: $bp-mobile-lg) {
+          background:transparent !important;
+          margin-top:1rem !important;
+          padding:0;
+       }
     }
 
     &__submit {
         padding: 0 2.5rem;
         font-size: 1.4rem;
 
+        @media only screen and (max-width: $bp-mobile-lg) {
+          width:100%;
+          padding: 1.5rem;
+          justify-content: center;
+       }
+        
     }
 }
 
@@ -28,6 +54,10 @@
     position: relative;
     user-select: none;
     background: #fff;
+
+    @media only screen and (max-width: $bp-mobile-lg) {
+      width:100%;
+  }
 }
   
   .custom-select {
@@ -59,6 +89,10 @@
             width: 0.15rem;
             height: 100%;
             transition: all 0.5s;
+
+            @media only screen and (max-width: $bp-mobile-lg) {
+              width:0.25rem;
+            }
         }
         
         &__arrow::before {

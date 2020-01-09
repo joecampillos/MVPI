@@ -91,3 +91,11 @@ transition: all .2s ease-in-out;
         }
     }
 }
+
+.slide-number {
+    font-size:1.6rem;
+
+    @media only screen and (max-width: $bp-tab-md) {
+        font-size:1.4rem;
+    }
+}

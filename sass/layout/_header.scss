@@ -20,10 +20,60 @@
     justify-content: space-between;
     align-items: center;
 
-    &__menu, &__menu-secondary {
+    &__logo {
+        z-index:1;
+
+        img {
+            max-width: 385px;
+
+            @media only screen and (max-width: $bp-mobile-md) {
+                max-width: 300px;
+            }
+    
+        }
+    }
+
+    &__menu, &__menu-secondary, &__menu-2 {
         display:flex;
         list-style:none;
         font-size:$default-font;
+
+        @media only screen and (max-width: $bp-desktop-md) {
+            display:none;
+        }
+
+        /* MOBILE MENU MOBILE */
+
+        &.activemenu {
+            background: $color-black;
+            width: 100%;
+            height: 100%;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 0;
+            justify-content: center;
+
+            .nav__menu__link:link, .nav__menu__link:visited {
+                color:$color-white;
+                font-size:3rem;
+                margin-bottom:2rem;
+            }
+        }
+    }
+
+   
+
+    .navbar-toggle {
+        display:none;
+
+        @media only screen and (max-width: $bp-desktop-md) {
+            display:block;
+            z-index:9999;
+        }
     }
 
     &__menu {
@@ -45,6 +95,11 @@
     &__menu-secondary {
         display:flex;
 
+        
+        @media only screen and (max-width: $bp-desktop-md) {
+            display:none;
+        }
+
         &__link:link,
         &__link:visited {
             padding: 0 calc(2rem / 2);
@@ -65,6 +120,10 @@
     transform: translateY(-60%);
     z-index:2;
 
+    @media only screen and (max-width: $bp-mobile-lg) {
+        margin-top:5rem;
+    }
+
    /* 
    &__sub, &__title {
         text-shadow:0px 0px 30px rgba(0,56,68,1);
@@ -74,6 +133,10 @@
     &__sub {
         font-size: $reg-subtitle;
         color:$color-white;
+
+        @media only screen and (max-width: $bp-mobile-lg) {
+           font-size:1.6rem;
+        }
     }
 
     &__title {
@@ -81,6 +144,13 @@
         font-size:5.6rem;
         line-height: 1;
         margin: 0.8rem 0;
+
+          
+        @media only screen and (max-width: $bp-mobile-md) {
+            font-size:4.5rem;
+            margin:1.5rem 0;
+        }
+
 
         }
 
@@ -112,11 +182,15 @@
 
 .header-shadow {
     position: absolute;
-    z-index:1;
+    z-index:0;
     background:url(../img/shadow.png) no-repeat;
     width:100%;
     height:100%;
     background-blend-mode: multiply;
+
+    @media only screen and (max-width: $bp-mobile-lg) {
+        top:-15rem;
+     }
 }
 
 .scroll-text {
@@ -134,11 +208,30 @@
         font-weight:700;
         color:$color-white;
         text-shadow:0px 0px 30px rgba(0,0,0,1);
+
+        @media only screen and (max-width: $bp-mobile-lg) {
+            font-size:1.6rem;
+         }
     }
 
     &__scrolldown {
         font-size:1.6rem;
         color:$color-white;
         text-shadow:0px 0px 30px rgba(0,0,0,1);
+
+        @media only screen and (max-width: $bp-mobile-lg) {
+            font-size:1.4rem;
+         }
     }
+}
+
+
+/** MOBILE MENU **/
+.navbar-toggle {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    cursor: pointer; 
+    color: rgba(255,255,255,0.8);
+    font-size: 24px;
 }
