@@ -564,8 +564,10 @@ h3 {
   background: url("../img/hero_bg.jpg") no-repeat;
   background-size: cover;
   background-position: center 0;
-  height: 100vh;
   position: relative; }
+  @media only screen and (max-width: 61.8em) {
+    .header-container {
+      height: 80rem; } }
 
 .header {
   grid-column: full-start / full-end;
