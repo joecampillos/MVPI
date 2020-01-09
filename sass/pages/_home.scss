@@ -564,6 +564,13 @@
     }
 }
 
+.bullet-box__list.loc-01, .bullet-box__list.loc-02, .bullet-box__list.loc-03 {
+
+    &.loc-active {
+        display:grid !important;
+    }
+}  
+
 
 .loc-project {
 
