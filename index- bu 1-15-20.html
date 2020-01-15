@@ -5,16 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="assets/css/animate.css" />
    <!--<script src="js/scripts.js"></script>-->
     <title>Metro Vantage Properties Inc</title>
-
-    <!-- CSS -->
-<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-<!-- JavaScript -->
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
-
 </head>
 
 <body class="container">
@@ -22,19 +14,15 @@
 
     <div class="header-container full-column grid-full">
 
-
-        <div class="header-video-cont">
-            <video autoplay muted loop id="myVideo" class="header__video">
-                <source src="img/header-bg.mp4" type="video/mp4">
-            </video>
-         </div>
-
         <!-- Hide this header in desktop this will only show on mobile version -->
         <header class="header header-area hide_this_header_menu_in_desktop">
             <div class="dope-nav-container breakpoint-off">
               
                         <!-- Main Menu -->
                         <nav class="dope-navbar" id="dopeNav">
+                            <div class="nav__logo nav__logo_padding">
+                                <a href="#"><img src="img/logo_mvpi.png" alt="Synthesis Logo" class="mvpi logo"></a>
+                            </div>
 
                             <div class="dope-navbar-toggler">
                                 <span class="navbarToggler mobile_view_responsive_bars_menu_toggle_home hide_menu_in_ipad"><span></span><span></span><span></span></span>
@@ -49,21 +37,21 @@
                                 <div class="dopenav">
                                     <ul id="nav">
                                         <li><a href="index.html" class="nav-style">Home</a></li>
-                                        <li><a href="about_us.html" class="nav-style">About Us</a></li>
-                                        <li><a href="project_page.html" class="nav-style">Properties</a></li>
+                                        <li><a href="about.html" class="nav-style">About Us</a></li>
+                                        <li><a href="project_page.html" class="nav-style">Projects</a></li>
                                         <!-- <li><a href="project_details.html" class="nav-style">Locations</a></li> -->
                                         <li><a href="contact_us.html" class="nav-style">Contact</a></li>
                                     </ul>
+                                    <ul class="justify-content-end">
+                                        <li><a href="service.html" class="nav-style">Resorts</a></li>
+                                        <li><a href="#blog" class="nav-style">Leisure</a></li>
+                                        <li><a href="contact.html" class="nav-style">Real Estate</a></li>
+                                    </ul>
                                 </div>
                                 <!-- Nav End -->
-                                <a href="search.html" class="text-dark"><i class="icofont-search"></i></a>
+                                <a href="contact.html" class="text-dark"><i class="icofont-search"></i></a>
                             </div>
                         </nav>
-
-                        <div class="nav__logo nav__logo_padding">
-                            <a href="#"><img src="img/logo_mvpi.png" alt="Synthesis Logo" class="mvpi logo"></a>
-                        </div>
-
                         <div class="overlay"></div>
                     
             </div>
@@ -76,32 +64,97 @@
                 <span class="navbar-toggle dope-navbar-toggler hide_menu_in_ipad">
                    <img src="img/icons/menu-icon--mobile.svg" alt="Mobile Menu Icon">
                 </span>
-         
-                <ul class="nav__menu">
-                    <li class="nav__menu__list"><a href="index.html" class="nav__menu__link">Home</a></li>
-                    <li class="nav__menu__list"><a href="about_us.html" class="nav__menu__link">About Us</a></li>
-                    <li class="nav__menu__list"><a href="project_page.html" class="nav__menu__link">Properties</a></li>
-                    <li class="nav__menu__list"><a href="locations.html" class="nav__menu__link">Locations</a></li>
+            
+                <div class="nav__logo">
+                    <a href="#"><img src="img/logo_mvpi.png" alt="Synthesis Logo" class="mvpi logo"></a>
+                </div>
+
+            
+                <ul class="nav__menu" id="js-menu">
+                    <li class="nav__menu__list"><a href="#" class="nav__menu__link">Home</a></li>
+                    <li class="nav__menu__list"><a href="#" class="nav__menu__link">About Us</a></li>
+                    <li class="nav__menu__list"><a href="project_page.html" class="nav__menu__link">Projects</a></li>
+                   <!--  <li class="nav__menu__list"><a href="" class="nav__menu__link">Locations</a></li> -->
                     <li class="nav__menu__list"><a href="contact_us.html" class="nav__menu__link">Contact</a></li>
-                    <li class="nav__menu__list"><a href="search.html" class="nav__menu__link searchBtn"><img src="img/icons/search.svg" alt="Search MVPI"></a></li>
+
+                </ul>
+            
+
+                <ul class="nav__menu-secondary">
+                    <li class="nav__menu-secondary__list"><a href="#" class="nav__menu-secondary__link">Resorts</a></li>
+                    <li class="nav__menu-secondary__list"><a href="#" class="nav__menu-secondary__link">Leisure</a></li>
+                    <li class="nav__menu-secondary__list"><a href="#" class="nav__menu-secondary__link">Real Estate</a></li>
+                    <li class="nav__menu-secondary__list"><a href="#" class="nav__menu-secondary__link searchBtn"><img src="img/icons/search.svg" alt="Search MVPI"></a></li>
                 </ul>
 
             </nav>
-
-                    
-            <div class="nav__logo">
-                <a href="#"><img src="img/logo_mvpi-big.png" alt="Synthesis Logo" class="mvpi logo"></a>
-            </div>
-
-
         </header>
 
+      
         
         <div class="header-text">
-           
             <p class="header-text__sub">Elegant Properties. Unrivalled Service. Memorable Moments.</p>
             <h1 class="header-text__title">Turning Vision into Reality</h1>
 
+
+            <form action="" class="searchForm">
+                <div class="custom-select-wrapper searchForm__property">
+                    <div class="custom-select">
+                        <div class="custom-select__label">Property Type</div>
+                        <div class="custom-select__trigger"><span>All Property</span>
+                            <div class="custom-select__arrow"></div>
+                        </div>
+                        <div class="custom-options">
+                            <span class="custom-option selected" data-value="all-location">All Property</span>
+                            <span class="custom-option" data-value="leisure">Leisure</span>
+                            <span class="custom-option" data-value="residential">Residential</span>
+                            <span class="custom-option" data-value="commercial">Commercial</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-select-wrapper searchForm__location">
+                    <div class="custom-select">
+                        <div class="custom-select__label">Location</div>
+                        <div class="custom-select__trigger"><span>All Location</span>
+                            <div class="custom-select__arrow"></div>
+                        </div>
+                        <div class="custom-options">
+                            <span class="custom-option selected" data-value="all-location">All Location</span>
+                            <span class="custom-option" data-value="leisure">Calatagan, Batangas</span>
+                            <span class="custom-option" data-value="residential">San Juan, Batangas</span>
+                            <span class="custom-option" data-value="commercial">Samal, Davao</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-select-wrapper searchForm__button">
+                    <button class="searchForm__submit btn primary-bg btn-hover">
+                    
+                    
+                    <svg class="btn__icon btn__icon--left" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.4688 14.5688L11.7875 10.8875C12.7 9.775 13.25 8.35 13.25 6.79688C13.25 3.23438 10.3594 0.34375 6.79688 0.34375C3.23125 0.34375 0.34375 3.23438 0.34375 6.79688C0.34375 10.3594 3.23125 13.25 6.79688 13.25C8.35 13.25 9.77187 12.7031 10.8844 11.7906L14.5656 15.4688C14.8156 15.7188 15.2188 15.7188 15.4688 15.4688C15.7188 15.2219 15.7188 14.8156 15.4688 14.5688ZM6.79688 11.9656C3.94375 11.9656 1.625 9.64688 1.625 6.79688C1.625 3.94688 3.94375 1.625 6.79688 1.625C9.64688 1.625 11.9688 3.94688 11.9688 6.79688C11.9688 9.64688 9.64688 11.9656 6.79688 11.9656Z" fill="#ffffff"/>
+                    </svg>
+    
+    
+                        
+                    Search</button>
+                </div>
+            </form>
+          
+          <!--  <form action="" class="searchForm">
+
+                <div class="searchForm__group">
+                    <select name="f-property-type" id="f_property-type" class="searchForm__property"></select>
+                    <label for="f-property-type">Property Type</label>
+                </div>
+
+                <div class="searchForm__group">
+                    <select name="f-location" id="f_location" class="searchForm__location"></select>
+                    <label for="f-location">Location</label>
+                </div>
+
+                <button class="searchForm__submit">Search</button c>
+            </form>
+        -->    
         </div>
 
         <div class="header-shadow"></div>
@@ -122,14 +175,6 @@
 
 
 
-<div class="intro-text heading-tag">
-
-    <h2 class="heading-tag__title">Welcome to MVPI</h2>
-    <p class="heading-tag__subtitle">Metro Vantage Properties Inc. a company harnessing the beauty of the islands both near and remote, and developing luxurious spaces for leisure, wild abandon, and soul-searching to create an unapologetically rich and fulfilling lifestyle for Filipinos and their guests.
-    </p>
-
-</div>
-
 
  <!-- Rotator Section -->
 
@@ -140,10 +185,10 @@
 
 
     <!-- SERVICE 01: LEISURE TOURISM -->
-    <div class="home-services service-01 active">
+    <div class="home-services service-01">
         <div class="home-services__number">01</div>
         <div class="home-services__heading heading-tag-small">
-            <h3 class="heading-tag-small__title color-primary">Millennial Resorts</h3>
+            <h3 class="heading-tag-small__title color-primary">Leisure Tourism Estate</h3>
             <p class="heading-tag-small__subtitle">Whether buying, selling or renting a pub, bar, cinema, restaurant, gold course, or any other type of leisure property, we can help.
             </p>
 
@@ -168,26 +213,14 @@
 
         </div>
 
+
+
         <div class="home-services__content">
             <ul class="service-list">
-                <li class="service-list__bullets"><a href="project_details_cocoons.html" class="service-list__link">Cocoons</a></li>
-                <li class="service-list__bullets"><a href="project_details_crusoe.html" class="service-list__link">Crusoe</a></li>
-                <li class="service-list__bullets"><a href="project_details_the_colony.html" class="service-list__link">The Colony</a></li>
-                <li class="service-list__bullets"><a href="project_details_aquaria.html" class="service-list__link">Aquaria</a></li>
-                <li class="service-list__bullets"><a href="project_details_aqua.html" class="service-list__link">Aqua</a></li>
-                <li class="service-list__bullets"><a href="project_details_boardwalk.html" class="service-list__link">Boardwalk</a></li>
-                <li class="service-list__bullets"><a href="project_details_the_walk.html" class="service-list__link">The Walk</a></li>
-            </ul>
-            
-        </div>
-
-        <div class="home-services__logo">
-            <ul class="slide-logo">
-                <li class="slide-logo__list active"><a href="project_details_cocoons.html" class="slide-logo__link"><img src="img/millennial-resorts-logo.png" alt="Millennial Resorts Logo" class="slide-logo__img"></a></li>
-
-                <li class="slide-logo__list"><a href="project_details_cocoons.html" class="slide-logo__link"><img src="img/sceniq-logo.png" alt="Sceniq Logo" class="slide-logo__img"></a></li>
-
-                <li class="slide-logo__list"><a href="project_details_cocoons.html" class="slide-logo__link"><img src="img/metro-dusit-logo.png" alt="Metro Dusit Logo" class="slide-logo__img"></a></li>
+                <h4 class="service-list__title">Scenic</h4>
+                <li class="service-list__bullets"><a href="#" class="service-list__link">CaSoBe</a></li>
+                <li class="service-list__bullets"><a href="#" class="service-list__link">Club Laiya</a></li>
+                <li class="service-list__bullets"><a href="#" class="service-list__link">Costa Azalea</a></li>
             </ul>
             
         </div>
@@ -200,7 +233,7 @@
     <div class="home-services service-02">
         <div class="home-services__number">02</div>
         <div class="home-services__heading heading-tag-small">
-            <h3 class="heading-tag-small__title color-primary">Scenic</h3>
+            <h3 class="heading-tag-small__title color-primary">Residential and Commercial</h3>
             <p class="heading-tag-small__subtitle">Whether buying, selling or renting a pub, bar, cinema, restaurant, gold course, or any other type of leisure property, we can help.
             </p>
 
@@ -229,9 +262,8 @@
 
         <div class="home-services__content ">
             <ul class="service-list">
-                <li class="service-list__bullets"><a href="project_details_casobe.html" class="service-list__link">Casobe</a></li>
-                <li class="service-list__bullets"><a href="project_details_costa_azalea.html" class="service-list__link">Costa Azalea</a></li>
-                <li class="service-list__bullets"><a href="project_details_crusoe.html" class="service-list__link">Club Laiya</a></li>
+                <li class="service-list__bullets"><a href="#" class="service-list__link">Residential</a></li>
+                <li class="service-list__bullets"><a href="#" class="service-list__link">Commercial</a></li>
             </ul>
             
         </div>
@@ -241,12 +273,13 @@
 
     <!-- SERVICE 03: EXPERIENCE HIGHLIGHT -->
 
-    <div class="home-services service-03">
+    <div class="home-services service-03 active">
         <div class="home-services__number">03</div>
         <div class="home-services__heading heading-tag-small">
             <h3 class="heading-tag-small__title color-primary">Experience Highlight</h3>
             <p class="heading-tag-small__subtitle">Whether buying, selling or renting a pub, bar, cinema, restaurant, gold course, or any other type of leisure property, we can help.
             </p>
+
         </div>
         <div class="home-services__slidenav">
 
@@ -267,6 +300,8 @@
         </a>  
 
         </div>
+
+
 
         <div class="home-services__content">
             <ul class="service-list">
@@ -295,7 +330,10 @@
 
     <!-- LEISURE SLIDE -->
 
-    <div class="rotator-slide__item">
+    <div class="rotator-slide__item ">
+
+
+
         <div class="rotator-slide__icon">
              <img src="img/rotator/leisure-icon.svg" alt="Millennial Resort Icon"> 
         </div>
@@ -309,6 +347,8 @@
     <!-- RESIDENTIAL SLIDE -->
 
     <div class="rotator-slide__item">
+
+
         <div class="rotator-slide__icon">
              <img src="img/rotator/residential-icon.svg" alt="Millennial Resort Icon"> 
         </div>
@@ -336,18 +376,39 @@
 </section>
 
 
+
+
         <!-- LOCATION SECTION -->
+
+
         <section class="locations heading-tag grid-container">
 
             <h2 class="heading-tag__title">Lands of Discovery</h2>
             <p class="heading-tag__subtitle">The end to all exploring will be to arrive where we started and know the place for the first time</p>
-            <a href="locations.html" class="viewall">
+            <a href="#" class="viewall">
                 View All 
                 <svg class="viewall__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.43365 6.41672L6.30465 3.28772L7.12948 2.46289L11.6666 7.00006L7.12948 11.5372L6.30465 10.7124L9.43365 7.58339H2.33331V6.41672H9.43365Z" fill="#3534B1"/>
                 </svg>
             </a>
     
+            <ul class="featured-location">
+                <li class="featured-location__list">
+                    <span class="featured-location__label">San Juan, Batangas</span>
+                    <a href="#" class="featured-location__link">Club Laiya</a>
+                </li>
+    
+                <li class="featured-location__list active">
+                    <span class="featured-location__label">Calatagan, batangas</span>
+                    <a href="#" class="featured-location__link">CaSoBe</a>
+                </li>
+    
+                <li class="featured-location__list">
+                    <span class="featured-location__label">Samal, Davao</span>
+                    <a href="#" class="featured-location__link">Costa Azalea</a>
+                </li>
+    
+            </ul>
     
         </section>
     
@@ -390,15 +451,18 @@
                      </div>
 
                      <div class="loc-project__heading heading-tag-small loc-01">
-                        <h3 class="heading-tag-small__title">San Juan, Batangas</h3>
+                        <p class="heading-tag-small__subtitle">San Juan, Batangas</p>
+                        <h3 class="heading-tag-small__title">Club Laiya</h3>
                     </div>
     
                      <div class="loc-project__heading heading-tag-small loc-active loc-02">
-                         <h3 class="heading-tag-small__title">Calatagan, Batangas</h3>
+                         <p class="heading-tag-small__subtitle">Calatagan, Batangas</p>
+                         <h3 class="heading-tag-small__title">CaSoBe</h3>
                      </div>
 
                     <div class="loc-project__heading heading-tag-small loc-03">
-                        <h3 class="heading-tag-small__title">Samal, Davao</h3>
+                        <p class="heading-tag-small__subtitle">Samal, Davao</p>
+                        <h3 class="heading-tag-small__title">Costa-Azalea</h3>
                     </div>
     
                      <div class="loc-project__lists bullet-box">
@@ -416,32 +480,27 @@
                             <span class="bullet-box__title"> Projects </span>
                             </p>
 
-                       
+
                         <!-- PROJECTS LIST FOR CLUB LAIYA -->
 
                         <ul class="bullet-box__list locprojects--laiya loc-01">
-                            <h3 class="bullet-box__projtitle"> Club Laiya </h3>
                             <li class="bullet-box__item">
-                                <span class="bullet-box__label">Accommodations:</span>
-                                <a href="project_details_crusoe.html" class="bullet-box__link">Crusoe,</a>
-                                <a href="project_details_cocoons.html" class="bullet-box__link">Cocoons</a>
+                                <a href="#" class="bullet-box__link">Crusoe</a>
                             </li>
                             <li class="bullet-box__item">
-                                <span class="bullet-box__label">Meeting Venue:</span>
-                                <a href="project_details_canopy.html" class="bullet-box__link">Canopy,</a>
-                                <a href="project_details_isle.html" class="bullet-box__link">Isle</a>
+                                <a href="#" class="bullet-box__link">Isle</a>
                             </li>
                             <li class="bullet-box__item">
-                                <span class="bullet-box__label">Water Park:</span>
-                                <a href="project_details_aquaria.html" class="bullet-box__link">Aquaria</a>
+                                <a href="#" class="bullet-box__link">Cocoons</a>
                             </li>
                             <li class="bullet-box__item">
-                                <span class="bullet-box__label">Coworking Space:</span>
-                                <a href="project_details_the_colony.html" class="bullet-box__link">The Colony</a>
+                                <a href="#" class="bullet-box__link">The Colony</a>
                             </li>
                             <li class="bullet-box__item">
-                                <span class="bullet-box__label">Amenities:</span>
-                                <a href="project_details_boardwalk.html" class="bullet-box__link">Boardwalk</a>
+                                <a href="#" class="bullet-box__link">Canopy</a>
+                            </li>
+                            <li class="bullet-box__item">
+                                <a href="#" class="bullet-box__link">Boardwalk</a>
                             </li>
                         </ul>
 
@@ -450,28 +509,26 @@
 
 
                         <ul class="bullet-box__list loc-active locprojects--casobe loc-02">
-                            <h3 class="bullet-box__projtitle"> Casobe </h3>
                             <li class="bullet-box__item">
-                                <span class="bullet-box__label">Accommodations:</span>
-                                <a href="project_details_crusoe.html" class="bullet-box__link">Crusoe,</a>
-                                <a href="project_details_cocoons.html" class="bullet-box__link">Cocoons</a>
+                                <a href="#" class="bullet-box__link">Crusoe</a>
                             </li>
                             <li class="bullet-box__item">
-                                <span class="bullet-box__label">Meeting Venue:</span>
-                                <a href="project_details_canopy.html" class="bullet-box__link">Canopy,</a>
-                                <a href="project_details_isle.html" class="bullet-box__link">Isle</a>
+                                <a href="#" class="bullet-box__link">Aquaria</a>
                             </li>
                             <li class="bullet-box__item">
-                                <span class="bullet-box__label">Water Park:</span>
-                                <a href="project_details_aquaria.html" class="bullet-box__link">Aquaria</a>
+                                <a href="#" class="bullet-box__link">Cocoons</a>
                             </li>
                             <li class="bullet-box__item">
-                                <span class="bullet-box__label">Coworking Space:</span>
-                                <a href="project_details_the_colony.html" class="bullet-box__link">The Colony</a>
+                                <a href="#" class="bullet-box__link">The Colony</a>
                             </li>
                             <li class="bullet-box__item">
-                                <span class="bullet-box__label">Amenities:</span>
-                                <a href="project_details_boardwalk.html" class="bullet-box__link">Boardwalk</a>
+                                <a href="#" class="bullet-box__link">Canopy</a>
+                            </li>
+                            <li class="bullet-box__item">
+                                <a href="#" class="bullet-box__link">Boardwalk</a>
+                            </li>
+                            <li class="bullet-box__item">
+                                <a href="#" class="bullet-box__link">Isle</a>
                             </li>
                         </ul>
 
@@ -479,28 +536,26 @@
                           <!-- PROJECTS LIST FOR COSTA AZALEA -->
 
                         <ul class="bullet-box__list locprojects--costa loc-03">
-                            <h3 class="bullet-box__projtitle"> Costa Azalea </h3>
                             <li class="bullet-box__item">
-                                <span class="bullet-box__label">Accommodations:</span>
-                                <a href="project_details_crusoe.html" class="bullet-box__link">Crusoe,</a>
-                                <a href="project_details_cocoons.html" class="bullet-box__link">Cocoons</a>
+                                <a href="#" class="bullet-box__link">Crusoe</a>
                             </li>
                             <li class="bullet-box__item">
-                                <span class="bullet-box__label">Meeting Venue:</span>
-                                <a href="project_details_canopy.html" class="bullet-box__link">Canopy,</a>
-                                <a href="project_details_isle.html" class="bullet-box__link">Isle</a>
+                                <a href="#" class="bullet-box__link">Aquaria</a>
                             </li>
                             <li class="bullet-box__item">
-                                <span class="bullet-box__label">Water Park:</span>
-                                <a href="project_details_aquaria.html" class="bullet-box__link">Aquaria</a>
+                                <a href="#" class="bullet-box__link">Cocoons</a>
                             </li>
                             <li class="bullet-box__item">
-                                <span class="bullet-box__label">Coworking Space:</span>
-                                <a href="project_details_the_colony.html" class="bullet-box__link">The Colony</a>
+                                <a href="#" class="bullet-box__link">The Colony</a>
                             </li>
                             <li class="bullet-box__item">
-                                <span class="bullet-box__label">Amenities:</span>
-                                <a href="project_details_boardwalk.html" class="bullet-box__link">Boardwalk</a>
+                                <a href="#" class="bullet-box__link">Canopy</a>
+                            </li>
+                            <li class="bullet-box__item">
+                                <a href="#" class="bullet-box__link">Boardwalk</a>
+                            </li>
+                            <li class="bullet-box__item">
+                                <a href="#" class="bullet-box__link">Isle</a>
                             </li>
                         </ul>
                 </div>
@@ -521,6 +576,13 @@
             <div class="loc-project__featured-img loc-03">
                 <img src="img/casobe-featured.jpg" alt="Casobe">
             </div>
+    
+            <div class="loc-project__desc loc-01">One of Metro Manila's up-and-coming commercial centers, Las Piñas is situated along the border of the metropolis and the province of Cavite. Long known as a fishing settlement</div>
+
+            <div class="loc-project__desc loc-02 loc-active">One of Metro Manila's up-and-coming commercial centers, Las Piñas is situated along the border of the metropolis and the province of Cavite. Long known as a fishing settlement</div>
+
+            <div class="loc-project__desc loc-03">One of Metro Manila's up-and-coming commercial centers, Las Piñas is situated along the border of the metropolis and the province of Cavite. Long known as a fishing settlement</div>
+
 
 
 
@@ -563,6 +625,27 @@
             </a>
           
         </div>
+
+        <div class="about__mgmt">
+
+            <div class="mgmt-cont">
+                <div class="team-member">
+                    <img src="img/team-member/erickson.png" alt="Team Member" class="team-member__img">
+                    <p class="team-member__name">Erickson Y. Manzano</p>
+                    <p class="team-member__role">President and CEO</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="img/team-member/vivian.png" alt="Team Member" class="team-member__img">
+                    <p class="team-member__name">Vivian S. Liban</p>
+                    <p class="team-member__role">Chief Finance Consultant
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
   
 
@@ -796,11 +879,9 @@
 
 
 <script src="js/scripts.js"></script>
- <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
-  <script src="assets/js/dopeNav.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/animate.js"></script>
-
+<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+<script src="assets/js/dopeNav.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
